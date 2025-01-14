@@ -1,0 +1,112 @@
+.root{
+    -fx-background-color: white;
+}
+
+.left-background{
+    -fx-background-color: #EFEEEC;
+    -fx-border-color: #FFE890;
+}
+
+.linear-background{
+    -fx-background-color: linear-gradient(to bottom right, #ffc536, #b46406);
+}
+
+.nav-button{
+    -fx-background-color: #FFCC07;
+    -fx-border-color: #FFE890;
+    -fx-text-fill: black;
+    -border-radius: 0px;
+    -background-radius: 0px;
+    -fx-cursor: hand;
+    -fx-pref-height: 250px;
+}
+
+.nav-button:hover{
+    -fx-background-color: #FFE890;
+}
+
+.nav-button-choose{
+    -fx-background-color: #FFE890;
+}
+
+.head{
+    -fx-background-color: #EFEEEC;
+    -fx-border-color: #FFE890;
+}
+
+.sign-out-button{
+    -fx-background-color: white;
+    -fx-border-color: #FFCC07;
+    -fx-border-radius: 100px;
+    -fx-background-radius: 100px;
+    -fx-cursor: hand;
+}
+
+.sign-out-button:hover{
+    -fx-background-color: #776F2C;
+    -fx-text-fill: white;
+}
+
+.board{
+    -fx-background-color: #EFEEEC;
+}
+
+.shadow{
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 5,0,0,0);
+}
+
+.trasparent{
+    -fx-background-color: transparent;
+}
+
+.background-main{
+    -fx-background-color: #FFCC07;
+}
+
+.board-radius{
+    -fx-background-radius: 8px;
+    -fx-border-radius:8px;
+}
+
+.white-background{
+    -fx-background-color: white;
+}
+
+.btn{
+    -fx-background-color: #FFCC07;
+    -fx-background-radius: 5px;
+    -fx-border-color: #FFE890;
+    -fx-border-radius: 5px;
+    -fx-cursor: hand;
+}
+
+.btn:hover{
+    -fx-background-color: #FFE890;
+    -fx-border-color: #FFCC07;
+}
+
+.table-view{
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+    -fx-border-color: linear-gradient(to bottom right, #ffc536, #b46406);
+    -fx-border-radius: 5px;
+    -fx-border-width: 1.5px;
+}
+
+.table-view .column-header{
+    -fx-border-color: #f7f7f7;
+    -fx-border-width: 0 0.5px 0 0.5px;
+    -fx-border-style: solid;
+}
+
+.table-view .column-header-background{
+    -fx-background-color: #FFCC07;
+    -fx-background-radius: 5px 5px 0 0;
+    -fx-background-insets: 0 0 0 0;
+}
+
+.table-view .column-header, .filter{
+    -fx-background-color: transparent;
+    -fx-size: 40px;
+}
+

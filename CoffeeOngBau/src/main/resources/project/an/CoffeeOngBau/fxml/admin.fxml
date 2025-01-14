@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" stylesheets="@../css/home.css" type="StackPane" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.an.CoffeeOngBau.Controller.AdminController">
+   <children>
+      <AnchorPane fx:id="adminForm">
+         <children>
+            <BorderPane prefHeight="600.0" prefWidth="1100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <left>
+                  <AnchorPane prefHeight="600.0" prefWidth="217.0" styleClass="left-background" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane layoutX="1.6" layoutY="1.6" prefHeight="151.0" prefWidth="216.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="1.0">
+                           <children>
+                              <ImageView fitHeight="117.0" fitWidth="108.0" layoutX="55.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="55.0" AnchorPane.topAnchor="14.0">
+                                 <image>
+                                    <Image url="@../images/logo.png" />
+                                 </image>
+                              </ImageView>
+                              <Label alignment="CENTER" layoutX="48.0" layoutY="122.0" text="Cafe Ông Bầu" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="122.0">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <GridPane layoutX="1.0" layoutY="176.0" prefHeight="276.0" prefWidth="216.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="176.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Button fx:id="employNavBtn" mnemonicParsing="false" onAction="#handleLoadEmployee" prefHeight="85.0" prefWidth="249.0" styleClass="nav-button" text="Nhân viên" GridPane.rowIndex="4">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="reportNavBtn" mnemonicParsing="false" onAction="#handleLoadReport" prefHeight="85.0" prefWidth="245.0" styleClass="nav-button" text="Thống kê">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="productNavBtn" mnemonicParsing="false" onAction="#handleLoadProduct" prefHeight="85.0" prefWidth="230.0" styleClass="nav-button" text="Sản phẩm" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="orderNavBtn" mnemonicParsing="false" onAction="#handleLoadOrder" prefHeight="85.0" prefWidth="233.0" styleClass="nav-button" text="Hóa đơn" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="sellNavBtn" mnemonicParsing="false" onAction="#handleLoadSell" prefHeight="238.0" prefWidth="215.0" styleClass="nav-button" text="Bán hàng" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </AnchorPane>
+               </left>
+               <center>
+                  <AnchorPane prefHeight="512.0" prefWidth="882.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane fx:id="reportForm" layoutX="341.0" layoutY="32.0" prefHeight="568.0" prefWidth="882.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="32.0">
+
+                        </AnchorPane>
+                        <AnchorPane fx:id="header" layoutX="-0.8" layoutY="8.0" prefHeight="30.0" prefWidth="883.0" styleClass="head" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Button fx:id="logOutBtn" layoutX="27.0" layoutY="9.0" mnemonicParsing="false" onAction="#logout" prefHeight="22.0" prefWidth="72.0" styleClass="sign-out-button" text="Đăng xuất" AnchorPane.bottomAnchor="4.0" AnchorPane.topAnchor="4.0">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                              <Label fx:id="userNameText" layoutX="108.0" layoutY="10.0" text="Hoàng Duy An" AnchorPane.bottomAnchor="4.0" AnchorPane.topAnchor="4.0">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="productForm" layoutX="-1.0" layoutY="32.8" prefHeight="575.0" prefWidth="882.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="32.0">
+
+                        </AnchorPane>
+                        <AnchorPane fx:id="sellForm" layoutX="341.0" layoutY="200.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="32.0">
+
+                        </AnchorPane>
+                        <AnchorPane fx:id="employeeForm" prefHeight="568.0" prefWidth="882.4" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="32.0">
+
+                        </AnchorPane>
+                        <AnchorPane fx:id="orderForm" prefHeight="618.0" prefWidth="1125.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="32.0">
+                           
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </center>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+</fx:root>
